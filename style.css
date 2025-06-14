@@ -79,6 +79,21 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32pt;
 }
+#countdown {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#countdown.visible {
+  opacity: 1;
+}
 @media only screen and (max-width: 767px) {
   .grid-container {
     top: 55%;
